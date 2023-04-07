@@ -1,0 +1,88 @@
+.flashCardCreatorOverlay {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.693);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flashCardCreator {
+  box-sizing: border-box;
+  background-color: white;
+  width: 700px;
+  height: 60%;
+  border-left: 8px solid red;
+  padding: 15px
+}
+
+.flashCardCreator div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 10%;
+  box-sizing: border-box;
+}
+
+.titleInput {
+  width: 90%;
+  min-height: 45px;
+  border: 0;
+  border-bottom: 3px solid red;
+  outline: none;
+  padding: 3px 10px;
+  box-sizing: border-box;
+  font-size: 17px;
+}
+
+.titleInput::placeholder {
+  font-size: 17px;
+}
+
+.titleInput:focus {
+  background-color: rgb(233, 233, 233);
+}
+
+.contentInput {
+  margin-top: 25px;
+  width: 90%;
+  min-height: 280px;
+  border: 0;
+  border-bottom: 3px solid red;
+  outline: none;
+  padding: 3px 10px;
+  box-sizing: border-box;
+  font-size: 17px;
+  padding: 15px;
+}
+
+.contentInput:focus {
+  background-color: rgb(233, 233, 233);
+}
+
+.contentInput::placeholder {
+  font-size: 17px;
+}
+
+.doneBtn {
+  margin-left: 11px;
+  border: none;
+  border-radius: 3px;
+  background-color: red;
+  color:white;
+  padding: 8px 10px;
+  width: 55px
+}
+
+.doneBtn:hover {
+  background-color: rgb(254, 46, 46);
+  cursor: pointer
+}
+
+.colorInput {
+  width: 50px;
+}

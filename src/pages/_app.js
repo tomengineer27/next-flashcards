@@ -1,5 +1,15 @@
-import '@/styles/globals.css'
+import Layout from '@/components/Layout';
+import Context from '../components/Context';
+import '../styles/globals.css'
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function App({ Component, pageProps }) {
+  return (
+    <Context>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </Context>
+  );
 }
+
+export default App;
